@@ -9,7 +9,7 @@ CREATE TABLE 'jobfairlocator'.'Company' (
   PRIMARY KEY ('booth_id')
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-/*This table holds the all the other fields for the company*/
+/*This table holds the the other fields for the company*/
 CREATE TABLE 'jobfairlocator'.'Company_Data' (
   'booth_id' varchar(3) NOT NULL,
   'url' varchar(255),
@@ -25,4 +25,14 @@ a company can attend multiple days
 CREATE TABLE 'jobfairlocator'.'Days_Attending' (
   'booth_id' varchar(3) NOT NULL,
   'Date_Attending' DATE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*
+This table holds the the majors that the company supports
+this table is allowed to have duplicate ids because
+a company can support multiple majors
+*/
+CREATE TABLE 'jobfairlocator'.'Majors_Accepted' (
+  'booth_id' varchar(3) NOT NULL,
+  'Major' varchar(255)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
