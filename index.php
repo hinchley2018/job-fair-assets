@@ -33,9 +33,12 @@
 
     //displays all information on table
     $rows = $sth->fetchAll();
+    //we will change this so our query can print out the section
+    echo '<div class="A">';
     foreach ($rows as $row) {
-      echo '<div><input type="submit" name="' . $row['booth_id'] . '" value="' . $row['booth_id'] . '"/></div>';
+      echo '<input type="submit" name="' . $row['booth_id'] . '" value="' . $row['booth_id'] . '"/>';
     }
+    echo '</div>';
   ?>
     <img border="0" alt="Map" src="assets/Images/FairMap.png" width="1000" height="1000">
   </body>
