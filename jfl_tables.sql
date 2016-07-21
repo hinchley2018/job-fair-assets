@@ -10,11 +10,11 @@ CREATE TABLE `jobfairlocator`.`Company` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*This table holds the the other fields for the company*/
-CREATE TABLE 'jobfairlocator'.'Company_Data' (
-  'booth_id' varchar(3) NOT NULL,
-  'url' varchar(255),
-  'description' varchar(255),
-  PRIMARY KEY ('booth_id')
+CREATE TABLE `jobfairlocator`.`Company_Data` (
+  `booth_id` varchar(3) NOT NULL,
+  `url` varchar(255),
+  `description` varchar(255),
+  PRIMARY KEY (`booth_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*

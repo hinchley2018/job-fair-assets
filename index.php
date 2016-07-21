@@ -36,15 +36,15 @@
     //we will change this so our query can print out the section
     echo '<div class="A">';
     foreach ($rows as $row) {
-      $content = '<div>
-        <a href="' . $row['url'] .'"><b>Career Site</b></a>
-        <input type="submit" name="View' . $row['booth_id'] . '" value="View"/>
-        <input type="submit" name="Save' . $row['booth_id'] . '" value="Save"/>
-      </div>';
+      $content = "<div>
+        <a href='" . $row['url'] ."'><b>Career Site</b></a>
+        <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
+        <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
+      </div>";
       echo '<a href="#" data-html="true"
          data-toggle="popover"
          title="<b>' . $row['name'] .'</b>"
-         data-content="'.$content.'">'.$$row['booth_id'].'
+         data-content="'.$content.'">'.$row['booth_id'].'
       </a>';
     }
     echo '</div>';
@@ -56,6 +56,7 @@
     // Enables popover #1
     $("[data-toggle=popover]").popover();
 
+    /*
     // Enables popover #2
     $("#popover-2").popover({
         html : true,
@@ -66,6 +67,7 @@
           return $("#popover-title").html();
         }
     });
+    */
   });
   </script>
 
