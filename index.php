@@ -36,7 +36,16 @@
     //we will change this so our query can print out the section
     echo '<div class="A">';
     foreach ($rows as $row) {
-      echo '<input type="submit" name="' . $row['booth_id'] . '" value="' . $row['booth_id'] . '"/>';
+      $content = '<div>
+        <a href="' . $row['url'] .'"><b>Career Site</b></a>
+        <input type="submit" name="View' . $row['booth_id'] . '" value="View"/>
+        <input type="submit" name="Save' . $row['booth_id'] . '" value="Save"/>
+      </div>';
+      echo '<a href="#" data-html="true"
+         data-toggle="popover"
+         title="<b>' . $row['name'] .'</b>"
+         data-content="'.$content.'">Booth_ID
+      </a>';
     }
     echo '</div>';
   ?>
@@ -59,33 +68,6 @@
     });
   });
   </script>
-
-    <a href="#"
-      data-html="true"
-      data-toggle="popover"
-      title="<b>Company Name</b>"
-      data-content="<div><b>Comany URL</b></div>"
-    >Booth_ID
-    </a>
-
-    <!--
-    Example popover #2 - Takes content of popup from hidden divs using javascript.
-    -->
-
-    <br />
-
-    <a href="#" id="popover-2">Example popover #2</a>
-
-    <div id="popover-title" class="hidden">
-      <b>Example popover #2</b> - title
-    </div>
-
-    <div id="popover-content" class="hidden">
-      <div>
-        <a href="www.google.com"><b>Career Site</b></a>
-      </div>
-    </div>
-
 
   </body>
 </html>
