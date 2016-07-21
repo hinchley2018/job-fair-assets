@@ -41,5 +41,46 @@
     echo '</div>';
   ?>
     <img border="0" alt="Map" src="assets/Images/FairMap.png" width="1000" height="1000">
+  <script>
+    $(function(){
+    // Enables popover #1
+    $("[data-toggle=popover]").popover();
+
+    // Enables popover #2
+    $("#example-popover-2").popover({
+        html : true,
+        content: function() {
+          return $("#example-popover-2-content").html();
+        },
+        title: function() {
+          return $("#example-popover-2-title").html();
+        }
+    });
+});
+  </script>
+    <a href="#"
+      data-html="true"
+      data-toggle="popover"
+      data-content="<div><b>Example popover #1</b> - content</div>"
+      title="<b>Example popover #1</b> - title">Example popover #1
+    </a>
+
+    <!--
+    Example popover #2 - Takes content of popup from hidden divs using javascript.
+    -->
+
+    <br />
+
+    <a href="#" id="example-popover-2">Example popover #2</a>
+
+    <div id="example-popover-2-content" class="hidden">
+    <div>
+    <b>Example popover #2</b> - content
+    </div>
+    </div>
+
+    <div id="example-popover-2-title" class="hidden">
+    <b>Example popover #2</b> - title
+    </div>
   </body>
 </html>
