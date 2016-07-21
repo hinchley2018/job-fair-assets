@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body background="assets/Images/FairMap.png">
   <?php
 
     //we want to restrict this query so we can output
@@ -50,7 +50,7 @@
     }
     echo '</div>';
   ?>
-    <img border="0" alt="Map" src="assets/Images/FairMap.png" width="1000" height="1000">
+    <!--<img border="0" alt="Map" src="assets/Images/FairMap.png" width="1000" height="1000">-->
 
     <script>
     $(function(){
