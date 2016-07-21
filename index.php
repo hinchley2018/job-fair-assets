@@ -43,7 +43,7 @@
       </div>";
       echo '<a href="#" data-html="true"
          data-toggle="popover"
-         title="<b>' . $row['name'] .'</b>"
+         title="<b>' . $row['Name'] .'</b>"
          data-content="'.$content.'">'.$row['booth_id'].'
       </a>';
     }
