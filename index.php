@@ -48,7 +48,7 @@
     $("[data-toggle=popover]").popover();
 
     // Enables popover #2
-    $("#example-popover-2").popover({
+    $("#popover-2").popover({
         html : true,
         content: function() {
           return $("#popover-content").html();
@@ -74,7 +74,7 @@
 
     <br />
 
-    <a href="#" id="example-popover-2">Example popover #2</a>
+    <a href="#" id="popover-2">Example popover #2</a>
 
     <div id="popover-title" class="hidden">
       <b>Example popover #2</b> - title
