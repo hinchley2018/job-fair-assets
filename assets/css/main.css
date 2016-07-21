@@ -1,6 +1,7 @@
 
 body{
     background-repeat: no-repeat;
+    display: compact;
 }
 
 div[class*="A0"] {
