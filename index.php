@@ -39,6 +39,7 @@
       $content = " <div>
         <a href='" . $row['url'] ."'><b>Career Site</b></a>
         <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
+        <br>
         <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
       </div>";
       echo '<a href="#" data-html="true"
