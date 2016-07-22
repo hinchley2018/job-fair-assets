@@ -119,7 +119,7 @@ div[class^="F"] {
 
     position: relative;
     top:250px;
-    left:140px;
+    left:70px;
 }
 
 }
@@ -129,7 +129,12 @@ div[class^="G"] {
     width: 50px;
     height: 100px;
     z-index:999 !important;
+
+    display: inline-block;
+
     position: relative;
+    top:250px;
+    left:70px;
 }
 
 /*H1-19*/
@@ -137,7 +142,12 @@ div[class^="H"] {
     width: 50px;
     height: 100px;
     z-index:999 !important;
+
+    display: inline-block;
+
     position: relative;
+    top:250px;
+    left:70px;
 }
 
 /*I1-19*/
@@ -145,15 +155,24 @@ div[class^="I"] {
     width: 50px;
     height: 100px;
     z-index:999 !important;
+
+    display: inline-block;
+
     position: relative;
-}
+    top:250px;
+    left:70px;
 
 /*J1-17*/
 div[class^="J"] {
     width: 50px;
     height: 100px;
     z-index:999 !important;
+
+    display: inline-block;
+
     position: relative;
+    top:250px;
+    left:70px;
 }
 
 /*L1-3*/
