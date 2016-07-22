@@ -58,30 +58,24 @@ div[class^="A3"] {
 div[class^="B"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*C1-17*/
 div[class^="C"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*D1-19*/
 div[class^="D"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*E1-19*/
@@ -97,50 +91,41 @@ div[class^="E"] {
 div[class^="F"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
+
 }
 
 /*G1-19*/
 div[class^="G"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*H1-19*/
 div[class^="H"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*I1-19*/
 div[class^="I"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*J1-17*/
 div[class^="J"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
 }
 
 /*L1-3*/
