@@ -16,7 +16,7 @@ div[class^="A0"] {
     position: relative;
 
     top:100px;
-    right:10px;
+    right:5px;
 
     /* Rotate div */
     -ms-transform: rotate(7deg); /* IE 9 */
