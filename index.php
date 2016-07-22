@@ -17,8 +17,10 @@
   <?php
 
     //restrict this query so we can output by section
-    //handle letters first
-    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company,Company_Data WHERE Company.booth_id LIKE :booth_id";
+    //handle letters firstSELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data WHERE Company LIKE 'B%';
+
+
+    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id LIKE :booth_id";
 
     $booths = array("B%","C%","D%","E%","F%","G%","H%","I%","J%","K%");
 
