@@ -1,8 +1,12 @@
 
 body{
     background-repeat: no-repeat;
-
     background-position: center center;
+
+    -webkit-background-style: cover;
+    -moz-background-style: cover;
+    -o-background-size: cover;
+    background-style: cover;
 }
 /*A1-3*/
 div[class^="A0"] {
