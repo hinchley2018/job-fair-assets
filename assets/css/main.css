@@ -60,7 +60,7 @@ div[class^="B"] {
     height: 100px;
     z-index:999 !important;
     position: relative;
-    top:100px;
+    top:200px;
     left:200px;
 }
 
@@ -70,7 +70,7 @@ div[class^="C"] {
     height: 100px;
     z-index:999 !important;
     position: relative;
-    top:100px;
+    top:200px;
     left:90px;
 }
 
