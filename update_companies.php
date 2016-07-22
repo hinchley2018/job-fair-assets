@@ -17,10 +17,10 @@ require("db_connect.php");
     $advanced_query = "INSERT INTO Company_Data(booth_id,url) VALUES(:booth_id,:url)";
 
     $booths = array("A","B","C","D","E","F","G","H","I","J","K","L");
-    for ($tens_place=0; $tens_place<=1; $tens_place++) {
+    foreach ($booths as $booth) {
+        for ($tens_place=0; $tens_place<=1; $tens_place++) {
 
-        for ($ones_place = 1; $ones_place <= 9; $ones_place++) {
-            foreach ($booths as $booth) {
+            for ($ones_place = 1; $ones_place <= 9; $ones_place++) {
 
                 try {
                     $sth = $db->prepare($booth_query);
