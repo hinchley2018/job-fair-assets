@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: jhinchley
@@ -6,6 +7,9 @@
  * Time: 9:12 PM
  * Purpose: Form to update companies in database
  */
+
+//connect to db and start session
+require("db_connect.php");
 
     //restrict this query so we can output by section
     //handle letters first
