@@ -88,10 +88,9 @@ div[class^="D"] {
 div[class^="E"] {
     width: 200px;
     height: 100px;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    z-index:999 !important;
+    position: relative;
+    top: 25%;
 }
 
 /*F1-19*/
