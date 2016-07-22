@@ -14,10 +14,10 @@ div[class^="A0"] {
     height: 100px;
     z-index:999 !important;
     position: relative;
-    /*
+
     top:100px;
-    right:100px;
-       */
+    /*right:100px;*/
+
     /* Rotate div */
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
