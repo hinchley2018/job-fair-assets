@@ -40,7 +40,7 @@
     //displays all information on table
     $rows = $sth->fetchAll();
     //we will change this so our query can print out the section
-    echo '<div class="'. $row['booth_id'] .'">';
+    echo '<div class="'. $booth[0] .'">';
     foreach ($rows as $row) {
       $content = " <div>
         <a href='http://" . $row['url'] ."'><b>Career Site</b></a>

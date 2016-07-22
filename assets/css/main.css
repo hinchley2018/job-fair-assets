@@ -66,7 +66,7 @@ div[class^="B"] {
 
 /*C1-17*/
 div[class^="C"] {
-    width: 200px;
+    width: 100px;
     height: 100px;
     z-index:999 !important;
     position: relative;
