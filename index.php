@@ -16,25 +16,29 @@
   <body background="assets/Images/FairMap.png">
   <?php
 
-    //we want to restrict this query so we can output
-    //the booths like the drawing
-    //look at FairMap.svg to see the layout
-    $booth_query = "SELECT booth_id,Name FROM Company";
+    //restrict this query so we can output by section
+    //handle letters first
+    $booth_query = "SELECT booth_id,Name FROM Company WHERE booth_id LIKE :booth_id";
+
+    $booths = array("B%","C%","D%","E%","F%","G%","H%","I%","J%","K%");
+
+    foreach ($booths as $booth)  {
 
     try {
         $sth = $db->prepare($booth_query);
-        $result=$sth->execute();
+        $query_params = array(':booth_id' => $booth);
+        $result=$sth->execute($query_params);
     }
     catch (PDOException $e) {
         // Note: On a production website, you should not output $ex->getMessage().
         // It may provide an attacker with helpful information about your code.
-        die("Failed to run booth query: ");//. $ex->getMessage()
+        die("Failed to run booth query: ");//. $e->getMessage()
     }
 
     //displays all information on table
     $rows = $sth->fetchAll();
     //we will change this so our query can print out the section
-    echo '<div class="E0">';
+    echo '<div class="'. $row['booth_id'] .'">';
     foreach ($rows as $row) {
       $content = " <div>
         <a href='" . $row['url'] ."'><b>Career Site</b></a>
@@ -49,28 +53,27 @@
       </a>';
     }
     echo '</div>';
+    }
   ?>
-    <!--<img border="0" alt="Map" src="assets/Images/FairMap.png" width="1000" height="1000">-->
-
     <script>
-    $(function(){
-    // Enables popover #1
-    $("[data-toggle=popover]").popover();
+      $(function(){
+      // Enables popover #1
+      $("[data-toggle=popover]").popover();
 
-    /*
-    // Enables popover #2
-    $("#popover-2").popover({
-        html : true,
-        content: function() {
-          return $("#popover-content").html();
-        },
-        title: function() {
-          return $("#popover-title").html();
-        }
-    });
-    */
-  });
-  </script>
+      /*
+      // Enables popover #2
+      $("#popover-2").popover({
+          html : true,
+          content: function() {
+            return $("#popover-content").html();
+          },
+          title: function() {
+            return $("#popover-title").html();
+          }
+      });
+      */
+      });
+    </script>
 
   </body>
 </html>
