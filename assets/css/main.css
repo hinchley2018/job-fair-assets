@@ -65,7 +65,7 @@ div[class^="B"] {
 
     position: relative;
     top:150px;
-    left:190px;
+    left:220px;
 }
 
 /*C1-17*/
@@ -77,8 +77,8 @@ div[class^="C"] {
     display: inline-block;
 
     position: relative;
-    top:250px;
-    left:90px;
+    top:150px;
+    left:190px;
 }
 
 /*D1-19*/
