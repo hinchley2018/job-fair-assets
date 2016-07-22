@@ -43,7 +43,7 @@
     echo '<div class="'. $row['booth_id'] .'">';
     foreach ($rows as $row) {
       $content = " <div>
-        <a href='" . $row['url'] ."'><b>Career Site</b></a>
+        <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
         <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
         <br>
         <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
