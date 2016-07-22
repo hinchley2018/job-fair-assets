@@ -57,7 +57,7 @@ div[class^="A3"] {
 
 /*B1-17*/
 div[class^="B"] {
-    width: 50px;
+    width: 30px;
     height: 100px;
     z-index:999 !important;
 
