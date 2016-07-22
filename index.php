@@ -18,7 +18,7 @@
 
     //restrict this query so we can output by section
     //handle letters first
-    $booth_query = "SELECT booth_id,Name FROM Company WHERE booth_id LIKE :booth_id";
+    $booth_query = "SELECT booth_id,Name,Company_Data.url FROM Company,Company_Data WHERE booth_id LIKE :booth_id";
 
     $booths = array("B%","C%","D%","E%","F%","G%","H%","I%","J%","K%");
 
