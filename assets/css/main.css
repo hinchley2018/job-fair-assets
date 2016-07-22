@@ -56,10 +56,12 @@ div[class^="A3"] {
 
 /*B1-17*/
 div[class^="B"] {
-    width: 200px;
+    width: 100px;
     height: 100px;
     z-index:999 !important;
     position: relative;
+    top:100px;
+    left:80px;
 }
 
 /*C1-17*/
@@ -68,6 +70,8 @@ div[class^="C"] {
     height: 100px;
     z-index:999 !important;
     position: relative;
+    top:100px;
+    left:70px;
 }
 
 /*D1-19*/
