@@ -65,12 +65,12 @@ div[class^="B"] {
 
     position: relative;
     top:250px;
-    left:160px;
+    left:180px;
 }
 
 /*C1-17*/
 div[class^="C"] {
-    width: 50px;
+    width: 30px;
     height: 100px;
     z-index:999 !important;
 
@@ -78,12 +78,12 @@ div[class^="C"] {
 
     position: relative;
     top:250px;
-    left:120px;
+    left:10px;
 }
 
 /*D1-19*/
 div[class^="D"] {
-    width: 50px;
+    width: 30px;
     height: 100px;
     z-index:999 !important;
 
