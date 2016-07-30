@@ -92,19 +92,19 @@ div[class^="D"] {
 
     position: relative;
     top:150px;
-    left:100px;
+    left:150px;
 }
 
 /*E1-19*/
 div[class^="E"] {
-    width: 50px;
+    width: 10px;
     height: 100px;
     z-index:999 !important;
     font: 6px arial;
     display: inline-block;
 
     position: relative;
-    top:250px;
+    top:150px;
     left:80px;
 }
 
@@ -112,14 +112,14 @@ div[class^="E"] {
 
 /*F1-19*/
 div[class^="F"] {
-    width: 50px;
+    width: 10px;
     height: 100px;
     z-index:999 !important;
-
+    font: 6px arial;
     display: inline-block;
 
     position: relative;
-    top:250px;
+    top:150px;
     left:70px;
 }
 
