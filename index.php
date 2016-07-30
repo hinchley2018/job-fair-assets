@@ -17,19 +17,44 @@
 
   <?php
 
-    //restrict this query so we can output by section
-    //handle letters firstSELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data WHERE Company LIKE 'B%';
+    //output by section
+    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id BETWEEN :start_booth_id AND :end_booth_id";
 
-
-    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id LIKE :booth_id";
-
-    $booths = array("B%","C%","D%","E%","F%","G%","H%","I%","J%","K%");
+    $booths = array(array("A01","A03"),array("A04","A07"),array("A08","A11"),array("A12","A14"),
+        array("B01","B17"),
+        array("C01","C17"),
+        array("D01","D17"),
+        array("E01","E17"),
+        array("F01","F17"),
+        array("G01","G17"),
+        array("H01","H17"),
+        array("I01","I17"),
+        array("J01","J17"),
+        array("K01","K17"),
+        array("L01","L17"),array("L01","L17"),array("L01","L17"),
+        array("001","011"),
+        array("012","015"),
+        array("016","021"),
+        array("022","025"),
+        array("026","045"),
+        array("046","049"),
+        array("050","055"),
+        array("056","059"),
+        array("060","070"),
+        array("071","076"),
+        array("077","080"),
+        array("081","084"),
+        array("085","104"),
+        array("105","108"),
+        array("109","112"),
+        array("113","115"),
+        array("116","118"));
     echo '<form method="post" action="AdvancedDescription.php">>';
     foreach ($booths as $booth)  {
 
     try {
         $sth = $db->prepare($booth_query);
-        $query_params = array(':booth_id' => $booth);
+        $query_params = array(':start_booth_id' => $booth);
         $result=$sth->execute($query_params);
     }
     catch (PDOException $e) {
@@ -40,7 +65,7 @@
 
     //displays all information on table
     $rows = $sth->fetchAll();
-    //we will change this so our query can print out the section
+    //section the booths by angles
     echo '<div class="'. $booth[0] .'">';
     foreach ($rows as $row) {
       $content = " <div>
