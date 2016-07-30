@@ -14,6 +14,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body background="assets/Images/FairMap.png">
+
   <?php
 
     //restrict this query so we can output by section
@@ -23,7 +24,9 @@
     $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id LIKE :booth_id";
 
     $booths = array("B%","C%","D%","E%","F%","G%","H%","I%","J%","K%");
-
+    echo '<form>
+      
+    ';
     foreach ($booths as $booth)  {
 
     try {
@@ -56,26 +59,28 @@
     }
     echo '</div>';
     }
+    echo '</form>';
   ?>
-    <script>
-      $(function(){
-      // Enables popover #1
-      $("[data-toggle=popover]").popover();
 
-      /*
-      // Enables popover #2
-      $("#popover-2").popover({
-          html : true,
-          content: function() {
-            return $("#popover-content").html();
-          },
-          title: function() {
-            return $("#popover-title").html();
-          }
-      });
-      */
-      });
-    </script>
+  <script>
+    $(function(){
+    // Enables popover #1
+    $("[data-toggle=popover]").popover();
+
+    /*
+    // Enables popover #2
+    $("#popover-2").popover({
+        html : true,
+        content: function() {
+          return $("#popover-content").html();
+        },
+        title: function() {
+          return $("#popover-title").html();
+        }
+    });
+    */
+    });
+  </script>
 
   </body>
 </html>
