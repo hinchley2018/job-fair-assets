@@ -60,12 +60,12 @@ div[class^="B"] {
     width: 30px;
     height: 100px;
     z-index:999 !important;
-    font: 10px arial;
+    font: 8px arial;
     display: inline-block;
 
     position: relative;
     top:120px;
-    left:230px;
+    left:235px;
 }
 
 /*C1-17*/
@@ -73,12 +73,12 @@ div[class^="C"] {
     width: 30px;
     height: 100px;
     z-index:999 !important;
-    font: 10px arial;
+    font: 5px arial;
     display: inline-block;
 
     position: relative;
     top:120px;
-    left:175px;
+    left:180px;
 }
 
 /*D1-19*/
