@@ -11,8 +11,8 @@ body{
 }
 /*A1-3*/
 div[class="A01"] {
-    width: 100px;
-    height: 40px;
+    width: 70px;
+    height: 20px;
     z-index:999 !important;
     position: relative;
     border: solid black;
@@ -27,8 +27,8 @@ div[class="A01"] {
 
 /*A4-7*/
 div[class="A04"] {
-    width: 100px;
-    height: 40px;
+    width: 70px;
+    height: 20px;
     position: relative;
     border: solid black;
     top:100px;
@@ -38,8 +38,8 @@ div[class="A04"] {
 
 /*A8-11*/
 div[class="A08"] {
-    width: 100px;
-    height: 40px;
+    width: 70px;
+    height: 20px;
     position: relative;
     border: solid black;
     top:100px;
@@ -49,8 +49,8 @@ div[class="A08"] {
 
 /*A12-14*/
 div[class="A12"] {
-    width: 100px;
-    height: 40px;position: relative;
+    width: 70px;
+    height: 20px;position: relative;
     border: solid black;
     top:100px;
     left:80px;
