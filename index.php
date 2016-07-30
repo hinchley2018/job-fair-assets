@@ -30,8 +30,8 @@
         array("H01","H17"),
         array("I01","I17"),
         array("J01","J17"),
-        array("K01","K17"),
-        array("L01","L17"),array("L01","L17"),array("L01","L17")/*,
+        array("K01","K17")/*,
+        array("L01","L17"),array("L01","L17"),array("L01","L17"),
 
         array("001","011"),
         array("012","015"),
