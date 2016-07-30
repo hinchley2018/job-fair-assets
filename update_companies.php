@@ -17,22 +17,20 @@ require("db_connect.php");
     $advanced_query = "INSERT INTO Company_Data(booth_id,url) VALUES(:booth_id,:url)";
 
     $booths = array("A","B","C","D","E","F","G","H","I","J","K","L");
-    foreach ($booths as $booth) {
-        for ($tens_place=0; $tens_place<=1; $tens_place++) {
 
-            for ($ones_place = 1; $ones_place <= 9; $ones_place++) {
+        for ($count=0; $count<=118; $count++) {
 
                 try {
                     $sth = $db->prepare($booth_query);
                     $query_params = array(
-                        ':booth_id' => $booth . $tens_place . $ones_place,
-                        ':Name' => "Company" . $booth . $tens_place . $ones_place
+                        ':booth_id' => $count,
+                        ':Name' => "Company". $count
                     );
                     $result = $sth->execute($query_params);
 
                     $sth2 = $db->prepare($advanced_query);
                     $query_params2 = array(
-                        ':booth_id' => $booth . $tens_place . $ones_place,
+                        ':booth_id' => $count,
                         ':url' => "www.google.com"
                     );
                     $result = $sth2->execute($query_params2);
@@ -41,10 +39,10 @@ require("db_connect.php");
                     // It may provide an attacker with helpful information about your code.
                     die("Failed to run booth query: ". $e->getMessage());//. $e->getMessage()
                 }
-            }
+
 
         }
-    }
+
 
 
 ?>
