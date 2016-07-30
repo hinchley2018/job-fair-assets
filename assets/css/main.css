@@ -11,14 +11,14 @@ body{
 }
 /*A1-3*/
 div[class="A01"] {
-    width: 200px;
+    width: 100px;
     height: 40px;
     z-index:999 !important;
     position: relative;
     border: solid black;
     top:100px;
     left:80px;
-font: 6px arial;
+    font: 6px arial;
     /* Rotate div */
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
@@ -27,22 +27,33 @@ font: 6px arial;
 
 /*A4-7*/
 div[class="A04"] {
-    width: 200px;
+    width: 100px;
     height: 40px;
-font: 6px arial;
+    position: relative;
+    border: solid black;
+    top:100px;
+    left:80px;
+    font: 6px arial;
 }
 
 /*A8-11*/
 div[class="A08"] {
-    width: 200px;
+    width: 100px;
     height: 40px;
-font: 6px arial;
+    position: relative;
+    border: solid black;
+    top:100px;
+    left:80px;
+    font: 6px arial;
 }
 
 /*A12-14*/
 div[class="A12"] {
     width: 200px;
-    height: 40px;
+    height: 40px;position: relative;
+    border: solid black;
+    top:100px;
+    left:80px;
     font: 6px arial;
     /* Rotate div */
     -ms-transform: rotate(7deg); /* IE 9 */
