@@ -54,7 +54,8 @@
 
     try {
         $sth = $db->prepare($booth_query);
-        $query_params = array(':start_booth_id' => $booth);
+        $query_params = array(':start_booth_id' => $booth[0],
+                ':end_booth_id' => $booth[1]);
         $result=$sth->execute($query_params);
     }
     catch (PDOException $e) {
