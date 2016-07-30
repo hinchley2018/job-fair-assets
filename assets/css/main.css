@@ -69,6 +69,8 @@ div[class^="B"] {
     left:245px;
 }
 
+
+
 /*C1-17*/
 div[class^="C"] {
     width: 10px;
@@ -79,9 +81,8 @@ div[class^="C"] {
 
     position: relative;
     top:150px;
-    left:215px;
+    left:220px;
 }
-
 /*D1-19*/
 div[class^="D"] {
     width: 10px;
@@ -92,8 +93,10 @@ div[class^="D"] {
 
     position: relative;
     top:150px;
-    left:192px;
+    left:197px;
 }
+
+
 
 /*E1-19*/
 div[class^="E"] {
@@ -105,11 +108,8 @@ div[class^="E"] {
 
     position: relative;
     top:150px;
-    left:162px;
+    left:172px;
 }
-
-
-
 /*F1-19*/
 div[class^="F"] {
     width: 10px;
@@ -120,7 +120,7 @@ div[class^="F"] {
 
     position: relative;
     top:150px;
-    left:139px;
+    left:149px;
 }
 
 
@@ -135,9 +135,8 @@ div[class^="G"] {
 
     position: relative;
     top:150px;
-    left:109px;
+    left:124px;
 }
-
 /*H1-19*/
 div[class^="H"] {
     width: 10px;
@@ -148,8 +147,10 @@ div[class^="H"] {
 
     position: relative;
     top:150px;
-    left:86px;
+    left:111px;
 }
+
+
 
 /*I1-19*/
 div[class^="I"] {
@@ -163,7 +164,6 @@ div[class^="I"] {
     top:150px;
     left:56px;
 }
-
 /*J1-17*/
 div[class^="J"] {
     width: 10px;
@@ -176,6 +176,8 @@ div[class^="J"] {
     top:150px;
     left:33px;
 }
+
+
 
 /*K1-17*/
 div[class^="K"] {
