@@ -48,7 +48,7 @@
         <br>
         <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
       </div>
-      <br>";
+      <br><br>";
       echo '<a href="#" data-html="true"
          data-toggle="popover"
          title="<b>' . $row['Name'] .'</b>"
