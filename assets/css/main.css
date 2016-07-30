@@ -73,7 +73,7 @@ div[class^="C"] {
     width: 30px;
     height: 100px;
     z-index:999 !important;
-
+    font: 10px arial;
     display: inline-block;
 
     position: relative;
