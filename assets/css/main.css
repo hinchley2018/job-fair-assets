@@ -120,35 +120,35 @@ div[class^="F"] {
 
     position: relative;
     top:150px;
-    left:110px;
+    left:95px;
 }
 
 
 
 /*G1-19*/
 div[class^="G"] {
-    width: 50px;
+    width: 10px;
     height: 100px;
     z-index:999 !important;
-
+    font: 6px arial;
     display: inline-block;
 
     position: relative;
-    top:250px;
-    left:60px;
+    top:150px;
+    left:70px;
 }
 
 /*H1-19*/
 div[class^="H"] {
-    width: 50px;
+    width: 10px;
     height: 100px;
     z-index:999 !important;
-
+    font: 6px arial;
     display: inline-block;
 
     position: relative;
-    top:250px;
-    left:50px;
+    top:150px;
+    left:45px;
 }
 
 /*I1-19*/
