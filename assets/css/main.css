@@ -60,7 +60,7 @@ div[class^="B"] {
     width: 30px;
     height: 100px;
     z-index:999 !important;
-    font: 15px;
+    font: 15px arial;
     display: inline-block;
 
     position: relative;
