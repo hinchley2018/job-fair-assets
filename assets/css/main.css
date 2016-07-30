@@ -60,7 +60,7 @@ div[class^="B"] {
     width: 30px;
     height: 100px;
     z-index:999 !important;
-    font: 8px arial;
+    font: 7px arial;
     display: inline-block;
 
     position: relative;
@@ -73,7 +73,7 @@ div[class^="C"] {
     width: 8px;
     height: 100px;
     z-index:999 !important;
-    font: 5px arial;
+    font: 6px arial;
     display: inline-block;
 
     position: relative;
