@@ -31,7 +31,8 @@
         array("I01","I17"),
         array("J01","J17"),
         array("K01","K17"),
-        array("L01","L17"),array("L01","L17"),array("L01","L17"),
+        array("L01","L17"),array("L01","L17"),array("L01","L17")/*,
+
         array("001","011"),
         array("012","015"),
         array("016","021"),
@@ -48,7 +49,8 @@
         array("105","108"),
         array("109","112"),
         array("113","115"),
-        array("116","118"));
+        array("116","118")*/
+    );
     echo '<form method="post" action="AdvancedDescription.php">>';
     foreach ($booths as $booth)  {
 

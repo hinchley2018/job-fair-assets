@@ -10,7 +10,7 @@ body{
     height:100%;
 }
 /*A1-3*/
-div[class^="A0"] {
+div[class="A01"] {
     width: 200px;
     height: 100px;
     z-index:999 !important;
@@ -26,7 +26,7 @@ div[class^="A0"] {
 }
 
 /*A4-7*/
-div[class^="A1"] {
+div[class="A04"] {
     width: 200px;
     height: 100px;
     /* Rotate div */
@@ -36,7 +36,7 @@ div[class^="A1"] {
 }
 
 /*A8-11*/
-div[class^="A2"] {
+div[class="A08"] {
     width: 200px;
     height: 100px;
     /* Rotate div */
@@ -46,7 +46,7 @@ div[class^="A2"] {
 }
 
 /*A12-14*/
-div[class^="A3"] {
+div[class="A12"] {
     width: 200px;
     height: 100px;
     /* Rotate div */
@@ -54,6 +54,8 @@ div[class^="A3"] {
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
 }
+
+
 
 /*B1-17*/
 div[class^="B"] {
