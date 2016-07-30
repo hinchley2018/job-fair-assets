@@ -24,7 +24,7 @@
     $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id LIKE :booth_id";
 
     $booths = array("B%","C%","D%","E%","F%","G%","H%","I%","J%","K%");
-    echo '<form>
+    echo '<form method="post" action="AdvancedDescription.php">>
       
     ';
     foreach ($booths as $booth)  {
