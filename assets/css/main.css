@@ -61,12 +61,12 @@ div[class^="B"] {
     height: 120px;
     z-index:999 !important;
     font: 6px arial;
-    border: solid blue;
+    /*border: solid blue;*/
     display: inline-block;
 
     position: relative;
     top:130px;
-    left:235px;
+    left:240px;
 }
 
 /*C1-17*/
@@ -79,7 +79,7 @@ div[class^="C"] {
 
     position: relative;
     top:130px;
-    left:190px;
+    left:210px;
 }
 
 /*D1-19*/
