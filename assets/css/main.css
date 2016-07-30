@@ -70,7 +70,7 @@ div[class^="B"] {
 
 /*C1-17*/
 div[class^="C"] {
-    width: 30px;
+    width: 25px;
     height: 100px;
     z-index:999 !important;
     font: 5px arial;
