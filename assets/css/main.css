@@ -16,7 +16,7 @@ div[class="A01"] {
     z-index:999 !important;
     position: relative;
     border: solid black;
-    top:100px;
+    top:50px;
     left:80px;
     font: 6px arial;display: inline-block;
     /* Rotate div */
@@ -31,7 +31,7 @@ div[class="A04"] {
     height: 20px;
     position: relative;
     border: solid black;
-    top:100px;
+    top:50px;
     left:80px;
     font: 6px arial;display: inline-block;
 }
@@ -42,7 +42,7 @@ div[class="A08"] {
     height: 20px;
     position: relative;
     border: solid black;
-    top:100px;
+    top:50px;
     left:80px;
     font: 6px arial;display: inline-block;
 }
@@ -52,7 +52,7 @@ div[class="A12"] {
     width: 70px;
     height: 20px;position: relative;
     border: solid black;
-    top:100px;
+    top:50px;
     left:80px;
     font: 6px arial;display: inline-block;
     /* Rotate div */
