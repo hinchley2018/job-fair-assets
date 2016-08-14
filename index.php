@@ -53,7 +53,8 @@
     echo '<form method="post" action="AdvancedDescription.php">';
 
     //do special formatting here
-    echo '<div class="A">';
+    echo '
+    <div class="A">';
     $special_booths = array(array("A01","A03"),
         array("A04","A07"),
         array("A08","A11"),
@@ -71,7 +72,8 @@
         die("Failed to run booth query: ");//. $e->getMessage()}
       }
       $rows = $sth->fetchAll();
-      echo '<div class="'. $special_booth[0] .'">';
+      echo '
+        <div class="'. $special_booth[0] .'">';
       foreach ($rows as $row) {
         $content = " <div>
           <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
