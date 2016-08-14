@@ -81,7 +81,8 @@
           <br>
           <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
         </div>";
-        echo '<a href="#" data-html="true"
+        echo '
+            <a href="#" data-html="true"
            data-toggle="popover"
            title="<b>' . $row['Name'] .'</b>"
            data-content="'.$content.'">'.$row['booth_id'].'
@@ -111,13 +112,14 @@
       //displays all information on table
       $rows = $sth->fetchAll();
       //section the booths by angles
-      echo '<div class="'. $booth[0] .'">';
+      echo '
+        <div class="'. $booth[0] .'">';
       foreach ($rows as $row) {
         $content = " <div>
-          <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
-          <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
-          <br>
-          <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
+            <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
+            <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
+            <br>
+            <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
         </div>";
         echo '<a href="#" data-html="true"
            data-toggle="popover"
