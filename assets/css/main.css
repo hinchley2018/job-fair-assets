@@ -9,6 +9,18 @@ body{
     -o-background-size: cover;
     height:100%;
 }
+
+/*A*/
+div[class="A"] {
+    width: 70px;
+    height: 20px;
+    position: relative;
+    border: solid black;
+    top:50px;
+    left:80px;
+    font: 6px arial;display: block;
+}
+
 /*A1-3*/
 div[class="A01"] {
     width: 70px;
@@ -18,7 +30,7 @@ div[class="A01"] {
     border: solid black;
     top:50px;
     left:80px;
-    font: 6px arial;display: block;
+    font: 6px arial;display: inline-block;
     /* Rotate div */
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
@@ -33,7 +45,7 @@ div[class="A04"] {
     border: solid black;
     top:50px;
     left:80px;
-    font: 6px arial;display: block;
+    font: 6px arial;display: inline-block;
 }
 
 /*A8-11*/
@@ -44,7 +56,7 @@ div[class="A08"] {
     border: solid black;
     top:50px;
     left:80px;
-    font: 6px arial;display: block;
+    font: 6px arial;display: inline-block;
 }
 
 /*A12-14*/
@@ -54,7 +66,7 @@ div[class="A12"] {
     border: solid black;
     top:50px;
     left:80px;
-    font: 6px arial;display: block;
+    font: 6px arial;display: inline-block;
     /* Rotate div */
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
