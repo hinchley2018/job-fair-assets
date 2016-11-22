@@ -1,5 +1,5 @@
 div[class="081"] {
-    width: 20px;
+    width: 25px;
     margin: 10px;
     max-height: inherit;
     display: inline-block;
@@ -7,7 +7,80 @@ div[class="081"] {
     border: 3px solid #ad0004;
 }
 div[class^="B"] {
-    width: 20px;
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+
+div[class^="C"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="D"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="E"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="F"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="G"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="H"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="I"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="J"] {
+    width: 25px;
+    margin: 10px;
+    max-height: inherit;
+    display: inline-block;
+
+    border: 3px solid #73AD21;
+}
+div[class^="K"] {
+    width: 25px;
     margin: 10px;
     max-height: inherit;
     display: inline-block;
