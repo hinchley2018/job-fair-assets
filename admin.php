@@ -28,6 +28,25 @@
       // It may provide an attacker with helpful information about your code.
       die("Failed to run booth query: ");//. $e->getMessage()
     }
+
+    //displays all information on table
+    $rows = $sth->fetchAll();
+    echo '<div class="'. $booth[0] .'">';
+    foreach ($rows as $row) {
+      $content = " <div>
+        <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
+        <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
+        <br>
+        <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
+      </div>";
+      echo '<a href="#" data-html="true"
+         data-toggle="popover"
+         title="<b>' . $row['Name'] .'</b>"
+         data-content="'.$content.'">'.$row['booth_id'].'
+      </a>';
+    }
+    echo '</div>';
+  }
   ?>
 </body>
 </html>
