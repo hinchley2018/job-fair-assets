@@ -1,12 +1,14 @@
 div[class="081"] {
     width: 20px;
+    margin: 10px;
     max-height: inherit;
     display: inline-block;
 
     border: 3px solid #ad0004;
 }
 div[class^="B"] {
-    width: 10px;
+    width: 20px;
+    margin: 10px;
     max-height: inherit;
     display: inline-block;
 
