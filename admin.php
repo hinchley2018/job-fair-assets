@@ -54,7 +54,7 @@
 
   //do special formatting here
   echo '
-    <div class="A">';
+    <div class="Zone1">';
   $special_booths = array(array("A01","A03"),
       array("A04","A07"),
       array("A08","A11"),
@@ -71,27 +71,27 @@
       // It may provide an attacker with helpful information about your code.
       die("Failed to run booth query: ");//. $e->getMessage()
     }
-  }
-  $rows = $sth->fetchAll();
-  echo '
-      <div class="'. $special_booth[0] .'">';
-  foreach ($rows as $row) {
-    $content = " <div>
-          <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
-          <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
-          <br>
-          <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
-        </div>";
-    echo '<a href="#" data-html="true"
-           data-toggle="popover"
-           title="<b>' . $row['Name'] .'</b>"
-           data-content="'.$content.'">'.$row['booth_id'].'
-        </a>';
-  }
-  echo '    </div>';
 
+    $rows = $sth->fetchAll();
+    echo '
+        <div class="'. $special_booth[0] .'">';
+    foreach ($rows as $row) {
+      $content = " <div>
+            <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
+            <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
+            <br>
+            <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
+          </div>";
+      echo '<a href="#" data-html="true"
+             data-toggle="popover"
+             title="<b>' . $row['Name'] .'</b>"
+             data-content="'.$content.'">'.$row['booth_id'].'
+          </a>';
+    }
+    echo '    </div>';
+  }
 
-  echo '</div>';
+    echo '</div>';
 
 
   //normal formatting
