@@ -69,7 +69,7 @@
   function ouputZone($db,$booth_query,$zoneName, $zone){
       //do special formatting here
       echo '
-    <div class=".$zoneName.">';
+    <div class="'.$zoneName.'">';
 
       foreach ($zone as $zone_booth){
           try{
@@ -111,6 +111,7 @@
   ouputZone($db,$booth_query,"Zone1",$zone1);
   ouputZone($db,$booth_query,"Zone2",$zone2);
   ouputZone($db,$booth_query,"Zone3",$zone3);
+
   echo '</form>';
   ?>
 
