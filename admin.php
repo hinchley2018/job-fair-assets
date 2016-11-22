@@ -109,6 +109,8 @@
   echo '<form method="post" action="AdvancedDescription.php">';
 
   ouputZone($db,$booth_query,"Zone1",$zone1);
+  ouputZone($db,$booth_query,"Zone2",$zone2);
+  ouputZone($db,$booth_query,"Zone3",$zone3);
   echo '</form>';
   ?>
 
