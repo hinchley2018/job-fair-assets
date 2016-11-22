@@ -1,6 +1,7 @@
 <?php
   //connect to db and start session
-  require("db_connect.php");
+    require("db_connect.php");
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -65,49 +66,49 @@
       array("118","109"),
   );
 
-  echo '<form method="post" action="AdvancedDescription.php">';
+  function ouputZone($zoneName, $zone){
+      //do special formatting here
+      echo '
+    <div class=".$zoneName.">';
 
-  //do special formatting here
-  echo '
-    <div class="Zone1">';
+      foreach ($zone as $zone_booth){
+          try{
+              $sth = $db->prepare($booth_query);
+              $query_params = array(':start_booth_id'=>$zone_booth[0],
+                  'end_booth_id'=>$zone_booth[1]);
+              $result=$sth->execute($query_params);
+          }
+          catch (PDOException $e){
+              // Note: On a production website, you should not output $ex->getMessage().
+              // It may provide an attacker with helpful information about your code.
+              die("Failed to run booth query: ");//. $e->getMessage()
+          }
 
-  foreach ($zone1 as $zone1_booth){
-    try{
-      $sth = $db->prepare($booth_query);
-      $query_params = array(':start_booth_id'=>$zone1_booth[0],
-          'end_booth_id'=>$zone1_booth[1]);
-      $result=$sth->execute($query_params);
-    }
-    catch (PDOException $e){
-      // Note: On a production website, you should not output $ex->getMessage().
-      // It may provide an attacker with helpful information about your code.
-      die("Failed to run booth query: ");//. $e->getMessage()
-    }
-
-    $rows = $sth->fetchAll();
-    echo '
-        <div class="'. $zone1_booth[0] .'">';
-    foreach ($rows as $row) {
-      $content = " <div>
+          $rows = $sth->fetchAll();
+          echo '
+        <div class="'. $zone_booth[0] .'">';
+          foreach ($rows as $row) {
+              $content = " <div>
             <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
             <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
             <br>
             <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
           </div>";
-      echo '<a href="#" data-html="true"
+              echo '<a href="#" data-html="true"
              data-toggle="popover"
              title="<b>' . $row['Name'] .'</b>"
              data-content="'.$content.'">'.$row['booth_id'].'
           </a>';
-    }
-    echo '    </div>';
+          }
+          echo '    </div>';
+      }
+
+      echo '</div>';
   }
 
-    echo '</div>';
+  echo '<form method="post" action="AdvancedDescription.php">';
 
-
-
-
+  ouputZone("Zone1",$zone1);
   echo '</form>';
   ?>
 
