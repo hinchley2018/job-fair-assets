@@ -1,0 +1,11 @@
+div[class="Zone1"]{
+    border: solid green;
+}
+
+div[class="Zone2"]{
+    border: solid yellow;
+}
+
+div[class="Zone3"]{
+    border: solid red;
+}
