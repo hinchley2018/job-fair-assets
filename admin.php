@@ -71,7 +71,9 @@
   echo '<form method="post" action="AdvancedDescription.php">';
 
   ouputZone($db,$booth_query,"Zone1",$zone1);
+  echo "<br><br><br>";
   ouputZone($db,$booth_query,"Zone2",$zone2);
+  echo "<br><br><br>";
   ouputZone($db,$booth_query,"Zone3",$zone3);
 
   echo '</form>';
