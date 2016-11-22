@@ -1,11 +1,13 @@
 div[class="081"] {
     width: 10px;
+    height: 120px;
     display: inline-block;
     position: relative;
     border: 3px solid #ad0004;
 }
 div[class^="B"] {
     width: 10px;
+    height: 120px;
     display: inline-block;
     position: relative;
     border: 3px solid #73AD21;
