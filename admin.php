@@ -31,7 +31,10 @@
 
     //displays all information on table
     $rows = $sth->fetchAll();
-    echo "<input type='text' value='Search' class='glyphicon glyphicon-search'/>";
+    echo "<div class='inner-addon left-addon'>
+    <i class='glyphicon glyphicon-user'></i>
+    <input type='text' class='form-control' />
+</div>";
     echo '<div class="'. $booth[0] .'">';
 
     foreach ($rows as $row) {
