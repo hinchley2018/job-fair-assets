@@ -4,8 +4,10 @@ div[class="Zone1"]{
 
 div[class="Zone2"]{
     border: solid yellow;
+    display: inline-block;
 }
 
 div[class="Zone3"]{
     border: solid red;
+
 }
