@@ -69,8 +69,9 @@
       catch (PDOException $e){
         // Note: On a production website, you should not output $ex->getMessage().
         // It may provide an attacker with helpful information about your code.
-        die("Failed to run booth query: ");//. $e->getMessage()}
+        die("Failed to run booth query: ");//. $e->getMessage()
       }
+    }
       $rows = $sth->fetchAll();
       echo '
       <div class="'. $special_booth[0] .'">';
