@@ -1,6 +1,6 @@
 div[class="081"] {
     width: 10px;
-    height: 20%;
+    max-height: inherit;
     display: inline-block;
     position: relative;
     border: 3px solid #ad0004;
