@@ -66,7 +66,7 @@
       array("118","109"),
   );
 
-  function ouputZone($zoneName, $zone){
+  function ouputZone($db,$booth_query,$zoneName, $zone){
       //do special formatting here
       echo '
     <div class=".$zoneName.">';
@@ -108,7 +108,7 @@
 
   echo '<form method="post" action="AdvancedDescription.php">';
 
-  ouputZone("Zone1",$zone1);
+  ouputZone($db,$booth_query,"Zone1",$zone1);
   echo '</form>';
   ?>
 
