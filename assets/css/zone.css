@@ -1,14 +1,19 @@
 div[class="Zone1"]{
     border: solid green;
+    height: auto;
+    width: auto;
 }
 
 div[class="Zone2"]{
     border: solid yellow;
     height: auto;
+    width: auto;
 }
 
 
 div[class="Zone3"]{
     border: solid red;
+    height: auto;
+    width: auto;
 
 }
