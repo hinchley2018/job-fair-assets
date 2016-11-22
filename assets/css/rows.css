@@ -1,0 +1,3 @@
+div[class^="B"] {
+    width: 10px;
+}

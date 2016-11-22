@@ -6,9 +6,7 @@ div[class="Zone2"]{
     border: solid yellow;
 
 }
-div[class^="B"] {
-    width: 10px;
-}
+
 
 div[class="Zone3"]{
     border: solid red;
