@@ -31,8 +31,9 @@
 
     //displays all information on table
     $rows = $sth->fetchAll();
-    echo '<div class="'. $booth[0] .'">';
     echo "<input type='text' value='Search' class='glyphicon glyphicon-search'/>";
+    echo '<div class="'. $booth[0] .'">';
+
     foreach ($rows as $row) {
       $content = " <div>
         <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
