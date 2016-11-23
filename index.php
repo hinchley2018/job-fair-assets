@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/zone.css">
       <link rel="stylesheet" href="assets/css/rows.css">
+      <link rel="stylesheet" href="assets/css/searchBar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
