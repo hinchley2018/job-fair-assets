@@ -81,16 +81,14 @@
       <div class="row">
           <div class="col-md-12">
               <div class="input-group" id="adv-search">
-                  <!-- datalist completion from http://www.w3schools.com/tags/tag_datalist.asp -->
-                  <input list="companies" name="browser">
-                      <datalist id="companies">
+                  <input list="browsers" name="browser" class="form-control" placeholder="Search for snippets">
+                      <datalist id="browsers">
                         <option value="Internet Explorer">
                         <option value="Firefox">
                         <option value="Chrome">
                         <option value="Opera">
                         <option value="Safari">
                       </datalist>
-                  <input type="text" class="form-control" placeholder="Search for snippets" />
                   <div class="input-group-btn">
                       <div class="btn-group" role="group">
                           <div class="dropdown dropdown-lg">
