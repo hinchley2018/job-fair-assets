@@ -116,7 +116,7 @@
           </div>
       </div>
   </div>
-  </div>
+
 
   <?php
   ouputZone($db,$booth_query,"Zone1",$zone1);
