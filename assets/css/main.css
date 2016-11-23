@@ -12,7 +12,7 @@ body{
 }
 
 
-/*A1-3*/
+/*A1-3
 div[class="A01"] {
     width: 70px;
     height: 20px;
@@ -22,11 +22,11 @@ div[class="A01"] {
     top:50px;
     left:80px;
     font: 6px arial;display: inline-block;
-    /* Rotate div */
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
 }
-
+*/
 
 
