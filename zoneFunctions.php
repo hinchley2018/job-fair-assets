@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: jhinchley
@@ -44,4 +45,23 @@ function ouputZone($db,$booth_query,$zoneName, $zone){
     }
 
     echo '</div>';
+}
+
+function insertCompanies($db){
+    $companyQuery = "SELECT Name FROM Company";
+    try{
+        $sth = $db->prepare($companyQuery);
+
+        $result=$sth->execute();
+    }
+    catch (PDOException $e){
+        // Note: On a production website, you should not output $ex->getMessage().
+        // It may provide an attacker with helpful information about your code.
+        die("Failed to run booth query: ");//. $e->getMessage()
+    }
+
+    $rows = $sth->fetchAll();
+    foreach ($rows as $row) {
+        echo '<option value="'.$row['Name'].'">';
+    }
 }

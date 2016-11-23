@@ -81,13 +81,11 @@
       <div class="row">
           <div class="col-md-12">
               <div class="input-group" id="adv-search">
-                  <input list="browsers" name="browser" class="form-control" placeholder="Search for snippets">
-                      <datalist id="browsers">
-                        <option value="Internet Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
+                  <!-- http://www.w3schools.com/tags/tag_datalist.asp -->
+                  <input list="companies" name="browser" class="form-control" placeholder="Search for companies">
+                      <datalist id="companies">
+                          <?php insertCompanies($db); ?>
+
                       </datalist>
                   <div class="input-group-btn">
                       <div class="btn-group" role="group">
@@ -105,10 +103,7 @@
                                               <option value="4">Most commented</option>
                                           </select>
                                       </div>
-                                      <div class="form-group">
-                                          <label for="contain">Author</label>
-                                          <input class="form-control" type="text" />
-                                      </div>
+
                                       <div class="form-group">
                                           <label for="contain">Contains the words</label>
                                           <input class="form-control" type="text" />
