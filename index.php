@@ -70,7 +70,7 @@
       array("118","109"),
   );
 
-  echo '<form method="post" action="AdvancedDescription.php">';
+
 ?>
   <!--searchbar
   Link for snippet http://bootsnipp.com/snippets/2q81r
@@ -119,6 +119,7 @@
 
 
   <?php
+  echo '<form method="post" action="AdvancedDescription.php">';
   ouputZone($db,$booth_query,"Zone1",$zone1);
   echo "<br><br><br>";
   ouputZone($db,$booth_query,"Zone2",$zone2);
