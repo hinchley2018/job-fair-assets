@@ -55,7 +55,7 @@
       array("K01","K17"),
 
     //exterior left
-      array("049","022")
+      array("022","049")
 
   );
 
