@@ -55,7 +55,7 @@
       array("K01","K17"),
 
     //exterior left
-      array("49","22")
+      array("049","022")
 
   );
 
@@ -76,6 +76,8 @@
   <!--searchbar
   Link for snippet http://bootsnipp.com/snippets/2q81r
   Originally created by maridlcrmn
+  Modified by me XD
+  Note to self I may not end up using this because the autocomplete is so useful
   -->
   <div class="container">
       <div class="row">
@@ -135,7 +137,7 @@
   <script>
     $(function(){
     // Enables popover #1
-    $("[data-toggle=popover]").popover();
+        $("[data-toggle=popover]").popover();
 
     /*
     // Enables popover #2
@@ -149,6 +151,19 @@
         }
     });
     */
+    });
+
+    //http://jsfiddle.net/2Frrr/1/
+    $(".light").on("hover", function(){
+
+        //get the id from the hovered element
+        var id = $(this).attr('id');
+
+        //set all elements beginning with box to background none
+        $('div[id^="box"]').css({'background':'none'});
+
+        //color the div based off id that was hovered
+        $("#box"+id).css({'background':'red'});
     });
   </script>
 
