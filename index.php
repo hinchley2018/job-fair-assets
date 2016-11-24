@@ -159,7 +159,7 @@
         //get selected option from the input event
         var opt = $('option[value="'+$(this).val()+'"]');
 
-        var selectedID = opt.attr('id')
+        var selectedID = opt.attr('id');
 
         //set all elements beginning with box to background none
         $('div[id^="'+selectedID+'"]').css({'background':'none'});
