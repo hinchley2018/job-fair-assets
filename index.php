@@ -154,18 +154,24 @@
     });
 
     //http://stackoverflow.com/questions/26103285/find-selected-item-in-datalist-in-html
-    $("#companyInput").on("input", function(){
+    $(function() {
+        $("#companyInput").on("input", function () {
 
-        //get selected option from the input event
-        var opt = $('option[value="'+$(this).val()+'"]');
-        alert(opt.attr("id"):"NO OPTION");
-        var selectedID = opt.attr('id');
+            //get selected option from the input event
+            var opt = $('option[value="' + $(this).val() + '"]');
+            alert(opt.attr("id")
+            :
+            "NO OPTION"
+            )
+            ;
+            var selectedID = opt.attr('id');
 
-        //set all elements beginning with box to background none
-        $('div[id^="'+selectedID+'"]').css({'background':'none'});
+            //set all elements beginning with box to background none
+            $('div[id^="' + selectedID + '"]').css({'background': 'none'});
 
-        //color the div based off id that was hovered
-        $("#"+selectedID).css({'background':'blue'});
+            //color the div based off id that was hovered
+            $("#" + selectedID).css({'background': 'blue'});
+        });
     });
 
     //http://jsfiddle.net/2Frrr/1/
