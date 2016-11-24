@@ -7,10 +7,12 @@
  * Time: 5:16 PM
  */
 
-function ouputZone($db,$booth_query,$zoneName, $zone){
+function ouputZone($db,$zoneName, $zone){
     //do special formatting here
     echo '
     <div class="'.$zoneName.'">';
+
+    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id BETWEEN :start_booth_id AND :end_booth_id";
 
     foreach ($zone as $zone_booth){
         try{
@@ -29,7 +31,7 @@ function ouputZone($db,$booth_query,$zoneName, $zone){
         echo '
         <div class="'. $zone_booth[0] .'">';
         foreach ($rows as $row) {
-            $content = " <div '>
+            $content = " <div >
             <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
             <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
             <br>

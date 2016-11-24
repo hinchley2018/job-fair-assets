@@ -22,58 +22,54 @@
   </head>
   <body background="assets/Images/FairMap.png">
 
-  <?php
+    <?php
 
-    //output by section
-    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id BETWEEN :start_booth_id AND :end_booth_id";
+        $zone1 = array(
+        //top row
+          array("050","059"),
+          array("060","070"),
+          array("071","080"),
 
-  $zone1 = array(
-    //top row
-      array("050","059"),
-      array("060","070"),
-      array("071","080"),
+        //bottom row
+          array("A01","A03"),
+          array("A04","A07"),
+          array("A08","A11"),
+          array("A12","A14"));
 
-    //bottom row
-      array("A01","A03"),
-      array("A04","A07"),
-      array("A08","A11"),
-      array("A12","A14"));
+        $zone2 = array(
+        //exterior right
+          array("081","108"),
 
-  $zone2 = array(
-    //exterior right
-      array("081","108"),
+        //middle rows right to left
+          array("B01","B17"),
+          array("C01","C17"),
+          array("D01","D17"),
+          array("E01","E17"),
+          array("F01","F17"),
+          array("G01","G17"),
+          array("H01","H17"),
+          array("I01","I17"),
+          array("J01","J17"),
+          array("K01","K17"),
 
-    //middle rows right to left
-      array("B01","B17"),
-      array("C01","C17"),
-      array("D01","D17"),
-      array("E01","E17"),
-      array("F01","F17"),
-      array("G01","G17"),
-      array("H01","H17"),
-      array("I01","I17"),
-      array("J01","J17"),
-      array("K01","K17"),
+        //exterior left
+          array("022","049")
 
-    //exterior left
-      array("022","049")
+        );
 
-  );
+        $zone3 = array(
+        //top row
+          array("L01","L03"),
+          array("L04","L12"),
+          array("L13","L15"),
 
-  $zone3 = array(
-    //top row
-      array("L01","L03"),
-      array("L04","L12"),
-      array("L13","L15"),
+        //bottom row
+          array("012","021"),
+          array("001","011"),
+          array("109","118"),
+        );
 
-    //bottom row
-      array("012","021"),
-      array("001","011"),
-      array("109","118"),
-  );
-
-
-?>
+    ?>
   <!--searchbar
   Link for snippet http://bootsnipp.com/snippets/2q81r
   Originally created by maridlcrmn
@@ -88,7 +84,6 @@
                   <input id="companyInput" list="companies" name="browser" class="form-control" placeholder="Search for companies">
                       <datalist id="companies">
                           <?php insertCompanies($db); ?>
-
                       </datalist>
                   <div class="input-group-btn">
                       <div class="btn-group" role="group">
@@ -126,11 +121,12 @@
 
   <?php
   echo '<form method="post" action="AdvancedDescription.php">';
-  ouputZone($db,$booth_query,"Zone1",$zone1);
+
+  ouputZone($db,"Zone1",$zone1);
   echo "<br><br><br>";
-  ouputZone($db,$booth_query,"Zone2",$zone2);
+  ouputZone($db,"Zone2",$zone2);
   echo "<br><br><br>";
-  ouputZone($db,$booth_query,"Zone3",$zone3);
+  ouputZone($db,"Zone3",$zone3);
 
   echo '</form>';
   ?>

@@ -1,5 +1,6 @@
 /**
  * Created by jhinchley on 11/23/16.
+ * Purpose: Modulize the js functions so debugging is simpler
  */
 $(function(){
     // Enables popover #1
@@ -31,6 +32,7 @@ $(function() {
         var selectedID = opt.attr('id');
 
         //set all elements beginning with box to background none
+        //this clears the previously selected box and simpler than searching for previous selection
         //$('div[id^="' + selectedID + '"]').css({'background': 'none'});
 
         //color the div based off id that was hovered
