@@ -160,7 +160,7 @@
             //get selected option from the input event
             var opt = $('option[value="' + $(this).val() + '"]');
 
-            //alert(opt.length ? opt.attr("id") : "NO OPTION" );
+            alert(opt.length ? opt.attr("id") : "NO OPTION" );
 
             var selectedID = opt.attr('id');
 
