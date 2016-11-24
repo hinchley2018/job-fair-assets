@@ -182,7 +182,7 @@
         $('div[id^="box"]').css({'background':'none'});
 
         //color the div based off id that was hovered
-        $("#box"+id).css({'background':'blue'});
+        $("#"+id).css({'background':'blue'});
     });
   </script>
 
