@@ -160,12 +160,12 @@
             //get selected option from the input event
             var opt = $('option[value="' + $(this).val() + '"]');
 
-            alert(opt.length ? opt.attr("id") : "NO OPTION" );
+            //alert(opt.length ? opt.attr("id") : "NO OPTION" );
 
             var selectedID = opt.attr('id');
 
             //set all elements beginning with box to background none
-            $('div[id^="' + selectedID + '"]').css({'background': 'none'});
+            //$('div[id^="' + selectedID + '"]').css({'background': 'none'});
 
             //color the div based off id that was hovered
             $("#" + selectedID).css({'background': 'blue'});
