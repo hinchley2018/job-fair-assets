@@ -84,7 +84,7 @@
           <div class="col-md-12">
               <div class="input-group" id="adv-search">
                   <!-- http://www.w3schools.com/tags/tag_datalist.asp -->
-                  <input list="companies" name="browser" class="form-control" placeholder="Search for companies">
+                  <input id="companyInput" list="companies" name="browser" class="form-control" placeholder="Search for companies">
                       <datalist id="companies">
                           <?php insertCompanies($db); ?>
 
@@ -153,6 +153,21 @@
     */
     });
 
+    //http://stackoverflow.com/questions/26103285/find-selected-item-in-datalist-in-html
+    $("#companyInput").on("input", function(){
+
+        //get selected option from the input event
+        var opt = $('option[value="'+$(this).val()+'"]');
+
+        var selectedID = opt.attr('id')
+
+        //set all elements beginning with box to background none
+        $('div[id^="'+selectedID+'"]').css({'background':'none'});
+
+        //color the div based off id that was hovered
+        $("#"+selectedID).css({'background':'blue'});
+    });
+
     //http://jsfiddle.net/2Frrr/1/
     $(".light").on("hover", function(){
 
@@ -163,7 +178,7 @@
         $('div[id^="box"]').css({'background':'none'});
 
         //color the div based off id that was hovered
-        $("#box"+id).css({'background':'red'});
+        $("#box"+id).css({'background':'blue'});
     });
   </script>
 

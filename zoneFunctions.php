@@ -48,7 +48,7 @@ function ouputZone($db,$booth_query,$zoneName, $zone){
 }
 
 function insertCompanies($db){
-    $companyQuery = "SELECT Name FROM Company";
+    $companyQuery = "SELECT booth_id,Name FROM Company";
     try{
         $sth = $db->prepare($companyQuery);
 
@@ -62,6 +62,6 @@ function insertCompanies($db){
 
     $rows = $sth->fetchAll();
     foreach ($rows as $row) {
-        echo '<option value="'.$row['Name'].'">';
+        echo '<option id="'.$row['booth_id'].'" value="'.$row['Name'].'">';
     }
 }
