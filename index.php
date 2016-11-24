@@ -163,7 +163,7 @@
             //alert(opt.length ? opt.attr("id") : "NO OPTION" );
 
             var selectedID = opt.attr('id');
-
+            alert(selectedID.length ? selectedID : "Empty");
             //set all elements beginning with box to background none
             //$('div[id^="' + selectedID + '"]').css({'background': 'none'});
 
