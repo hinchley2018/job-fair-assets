@@ -29,7 +29,7 @@ function ouputZone($db,$booth_query,$zoneName, $zone){
         echo '
         <div class="'. $zone_booth[0] .'">';
         foreach ($rows as $row) {
-            $content = " <div id='".$zone_booth['booth_id']."booth"."'>
+            $content = " <div id='".$row['booth_id']."booth"."'>
             <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
             <input type='submit' name='View" . $row['booth_id'] . "' value='View'/>
             <br>
