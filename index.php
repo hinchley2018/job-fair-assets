@@ -76,6 +76,8 @@
   Modified by me XD
   Note to self I may not end up using this because the autocomplete is so useful
   -->
+
+  <!--http://stackoverflow.com/questions/4871595/highlight-div-for-few-seconds-->
   <div class="container">
       <div class="row">
           <div class="col-md-12">
@@ -122,6 +124,7 @@
   <?php
   echo '<form method="post" action="AdvancedDescription.php">';
 
+  //output the zones/sections
   ouputZone($db,"Zone1",$zone1);
   echo "<br><br><br>";
   ouputZone($db,"Zone2",$zone2);
