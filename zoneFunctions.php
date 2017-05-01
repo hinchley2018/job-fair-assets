@@ -11,14 +11,14 @@ function ouputZone($db,$zoneName, $zone){
     //do special formatting here
     echo '
     <div class="'.$zoneName.'">';
+    for ($section = 0; $section <= 3; $section++) {
+        $booth_query = "SELECT Company.booth_id,Company.Name, Company.SubSection, Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.Section=:section";
 
-    $booth_query = "SELECT Company.booth_id,Company.Name,Company_Data.url FROM Company LEFT JOIN Company_Data ON Company.booth_id=Company_Data.booth_id WHERE Company.booth_id BETWEEN :start_booth_id AND :end_booth_id";
 
-    foreach ($zone as $zone_booth){
         try{
             $sth = $db->prepare($booth_query);
-            $query_params = array(':start_booth_id'=>$zone_booth[0],
-                'end_booth_id'=>$zone_booth[1]);
+            $query_params = array(':section'=>$section);
+
             $result=$sth->execute($query_params);
         }
         catch (PDOException $e){
@@ -28,8 +28,9 @@ function ouputZone($db,$zoneName, $zone){
         }
 
         $rows = $sth->fetchAll();
+        var_dump($rows);
         echo '
-        <div class="'. $zone_booth[0] .'">';
+        <div class="subsection'. $section .'">';
         foreach ($rows as $row) {
             $content = " <div >
             <a href='http://" . $row['url'] ."'><b>Career Site</b></a>
@@ -37,14 +38,13 @@ function ouputZone($db,$zoneName, $zone){
             <br>
             <input type='submit' name='Save" . $row['booth_id'] . "' value='Save'/>
           </div>";
-            echo '<a href="#" data-html="true"
-             data-toggle="popover"
-             title="<b>' . $row['Name'] .'</b>"
-             data-content="'.$content.'">'.$row['booth_id'].'
+            echo '<a href="#" data-html="true" data-toggle="popover" title="<b>' . $row['Name'] .'</b>" data-content="'.$content.'">'.$row['booth_id'].'
           </a>';
         }
         echo '    </div>';
     }
+
+
 
     echo '</div>';
 }

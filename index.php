@@ -122,11 +122,11 @@
   <?php
   echo '<form method="post" action="AdvancedDescription.php">';
 
-  ouputZone($db,"Zone1",$zone1);
+  ouputZone($db,"Zone1",0);
   echo "<br><br><br>";
-  ouputZone($db,"Zone2",$zone2);
+  ouputZone($db,"Zone2",1);
   echo "<br><br><br>";
-  ouputZone($db,"Zone3",$zone3);
+  ouputZone($db,"Zone3",2);
 
   echo '</form>';
   ?>
